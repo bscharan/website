@@ -100,6 +100,21 @@
             font-size: 2vw;
         }
     </style>
+    <script>
+        var j=0;
+        function myfun(){
+        var myquotes=document.getElementsByClassName("quote");
+        var i;
+        for(i=0;i<myquotes.length;i++){
+            myquotes[i].style.display = "none";
+        }
+        j++;
+        if(j>=myquotes.length){j=0;}
+        myquotes[j].style.display="block"
+        setTimeout(myfun,2000);
+    }
+
+    </script>
 </head>
 <body id="body">
     
@@ -134,10 +149,24 @@
 </div>
 <div class="Quotes">
         <p class="headline">Quotes</p>
-        <div class="card quote">
-            <q id="">People who are crazy enough to think they can change the world are the ones who do</q>
+        <div class="card quote" >
+            <q id="a">People who are crazy enough to think they can change the world are the ones who do</q>
         </div>
-        <p> hello world</p>
+        
+        <div class="card quote" >
+            <q id="b">well this is quote 2</q>
+        </div>
+        
+        <div class="card quote" >
+            <q id="c">well this is quote 3</q>
+        </div>
+        
+        <div class="card quote">
+            <q id="d">well this is quote 4</q>
+        </div>
+        <script>myfun()</script>
+        
+        
 </div>
 </body>
 </html>
