@@ -5,9 +5,9 @@ h4{            font-size: 1vw;        }
 h5{            font-size: 1vw;        }
 h6{            font-size: 1vw;        }
 p{            font-size: 1vw;        }
-a:link,
-a:visited,
-a:active {
+a{            font-size: 2vw;        }
+
+a:link,a:visited,a:active {
   text-decoration: none; 
   color: #000;
 }
