@@ -15,8 +15,10 @@
             width: 100%;
             margin-left: 0em;
             margin-top: 1.5vh;
+            padding-top:1vh;
             height: 8vh;
             background-color: beige;
+            box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
         }
         #navbar_logo{
             margin-left: 2vw;
@@ -39,23 +41,24 @@
         }
         .card{
             width: 8vw;
-            height: auto;
-            box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
-            transition: 0.3s;
+            height: 2vh;
+            padding-top: 1vh;
+            margin-bottom: 1vh;
             text-align: center;
         }
         .card:hover{
-            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+            color:darkturquoise;
         }
     </style>
 </head>
 <body>
     <div id=navbar>
         <div class="nav_img"><a href="http://bscharan.com"><img id="navbar_logo"  src="../img/Logo.png" ></img></a></div>
-        <div class="nav_item item_last card">Home</div>
-        <div class="nav_item card">Blog</div>
-        <div class="nav_item card">Contact</div>
-        <div class="nav_item card">Resume</div>
+        <div class="nav_item item_last card"><a href="">Home</a></div>
+        <div class="nav_item card"><a href="">Blog</a></div>
+        <div class="nav_item card"><a href="">Contact</a></div>
+        <div class="nav_item card"><a href="">Resume</a></div>
+        <div class="nav_item card"><a href="">Works</a></div>
     </div>
     <div id="final_Body">
         <p>Hello hi This is a section about "Me"</p>
