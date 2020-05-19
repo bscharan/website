@@ -26,6 +26,7 @@
         #page_body{
             background-color: #EFF;
             width:70vw;
+            height: auto;
             margin-left: auto;
             margin-right: auto;
             box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
@@ -60,9 +61,9 @@
             font-family: 'Caveat', cursive;
         }
         img{
-        max-width: 100%;
-        max-height: 100%;
-        display: block; /* remove extra space below image */
+            max-width: 100%;
+            max-height: 100%;
+            display: block; /* remove extra space below image */
         }
         .quote{
             padding:5vh;
@@ -70,11 +71,10 @@
             margin-right: auto;
             text-align: center;
             background-color: beige;
+            overflow: auto;
         }
         .Quotes{
             padding: 2vw;
-            width: 66vw;
-            height: auto;
             margin-left: auto;
             margin-right: auto; 
         }
@@ -85,7 +85,11 @@
             color:darkturquoise;
         }
         .quote_author{
-            float: right;
+            float:right;
+        }
+        .quote p{
+            padding: 0;
+            margin: 0;
         }
         p{
             font-family: 'Dancing Script', cursive;
