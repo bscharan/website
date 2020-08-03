@@ -1,3 +1,31 @@
+body {
+    overflow-x: hidden;
+}
+
+/* width */
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
 h1 {
     font-size: 2vw;
 }
@@ -67,4 +95,14 @@ a:hover {
 
 .item_last {
     margin-right: 2vw;
+}
+
+.left_align {
+    float: left;
+    padding: 3vh;
+    margin: inherit;
+}
+
+.right_align {
+    float: right;
 }
