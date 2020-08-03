@@ -41,19 +41,27 @@
             transition: 0.3s;
         }
         .container{
+            direction: rtl;
             width: 96vw;
-            height: 40vh;
+            height: 75vh;
+            margin:2vw;
+            padding-top: 1vh;
+            overflow: auto;
+        }
+        .left_align{
+            direction: ltr;
+            max-width: 50vw;
             overflow-x: hidden;
             overflow-y: scroll;
-            margin:2vw;
-            margin-top: 1.5vh;
-            padding-top: 1vh;
+        }
+        .right_align{
+
         }
         .container:hover {
             box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
         }
         q{
-            font-size: 5vh;
+            font-size: 4vh;
             color:#FFF;
             font-family: 'IM Fell DW Pica', serif;
         }
@@ -72,7 +80,7 @@
         <div class="nav_item card"><a href="./projects.html">Works</a></div>
     </div>
 
-    <div class=container style="background-image: url(../img/Tyger.jpg);">
+    <div class=container style="background-image: url(../img/Tyger.jpg); background-size: cover;" >
         <div class="left_align"  >
                 <q>Tyger Tyger, burning bright,
                 <br />In the forests of the night;
@@ -105,7 +113,7 @@
                 <br />Dare frame thy fearful symmetry</q>
         </div>
         <div class="right_align"> 
-            <!-- <img width="50%" src="../img/Tyger.jpg"><img> -->
+            william blake
         </div>
     </div>
 
