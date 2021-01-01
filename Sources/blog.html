@@ -72,7 +72,65 @@
             color: #FFF;
             font-family: 'IM Fell DW Pica', serif;
         }
+
+        
+        .quote {
+            padding: 5vh;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            background-color: beige;
+            overflow: auto;
+        }
+
+        .Quotes {
+            padding: 2vw;
+            margin-left: auto;
+            margin-right: auto;
+            
+        }
+
+        .Quotes .card{
+            height: 10vh;
+            padding-top: 1vh;
+            margin-bottom: 1vh;
+            text-align: center;
+        }
+
+        .Quotes q {
+            font-family: 'IM Fell DW Pica', serif;
+            font-size: 2vw;
+            /* color: rgb(192,44,56); */
+            color: darkturquoise;
+        }
+
+        .quote_author {
+            color: #000;
+            float: right;
+        }
+
+        .quote p {
+            height: 6vh;
+            padding: 0;
+            margin: 0;
+        }
+
+    
     </style>
+    <script>
+        var j = 0;
+        function myfun() {
+            var myquotes = document.getElementsByClassName("quote");
+            var i;
+            for (i = 0; i < myquotes.length; i++) {
+                myquotes[i].style.display = "none";
+            }
+            if (j >= myquotes.length) { j = 0; }
+            myquotes[j].style.display = "block"
+            j++;
+            setTimeout(myfun, 10000);
+        }
+    </script>
 </head>
 
 <body>
@@ -92,6 +150,47 @@
     <div>
         <h3>Hi Welcome to my Digital Space. It is my Collection of Internet Things that i found interesting. happy
             Exploring</h3>
+    </div>
+
+    
+    <div class="Quotes">
+
+        <div class="card quote">
+            <a href="https://www.youtube.com/watch?v=UF8uR6Z6KLc">
+                <q id="e">Stay hungry. Stay foolish.</q>
+                <p class="quote_author"><br />-Whole Earth Catalog.</p>
+            </a>
+        </div>
+
+        <div class="card quote" >
+            <q id="c">The present is theirs; the future, for which I really worked, is mine.</q>
+            <p class="quote_author"><br/>-Nikola Tesla</p>
+        </div>
+
+        <div class="card quote">
+            <q id="a">People who are crazy enough to think they can change the world are the ones who do</q>
+            <p class="quote_author"><br />-Steve Jobs.</p>
+        </div>
+
+        <div class="card quote">
+            <a href="https://ncase.me/trust/">
+                <q id="b">we are punished by our sins, not for them.</q>
+                <p class="quote_author"><br />-Elbert Hubbard.</p>
+            </a>
+        </div>
+
+        <div class="card quote">
+            <a href="https://www.youtube.com/watch?v=BxV14h0kFs0s">
+                <q id="d">Just because something is going to break in the end, doesn't mean that it can't have a lasting effect on future</q>
+                <p class="quote_author"><br />-Tom Scott.</p>
+            </a>
+        </div>
+
+        <!-- <div class="card quote">
+            <q id="d">well this is quote 4</q>
+            <p class="quote_author"><br/>-Author 4.</p>
+        </div> -->
+        <script>myfun()</script>
     </div>
 
     <div class="container" style="background-image: url(../img/Tyger.jpg); background-size: cover;">
