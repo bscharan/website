@@ -68,14 +68,15 @@ a:hover {
 }
 
 #navbar {
-    width: 100vw;
-    margin-left: 0em;
-    margin-top: 1.5vh;
+
     padding-top: 1vh;
     height: 8vh;
     overflow: auto;
     background-color: beige;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%;
 }
 
 .navbar_link  p{
