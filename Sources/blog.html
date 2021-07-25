@@ -118,7 +118,7 @@
 
         .left_align {
             direction: ltr;
-            max-width: 100%;
+            /* max-width: 100%; */
             max-height: 35%;
             overflow-x: hidden;
             /* padding-right: 100px;  */
@@ -133,9 +133,7 @@
         /* Hide scrollbar for IE, Edge and Firefox */
         .left_align {
             -ms-overflow-style: none;
-            /* IE and Edge */
             scrollbar-width: none;
-            /* Firefox */
         }
 
         .right_align {
@@ -156,6 +154,23 @@
 
         .column:hover {
             max-height: fit-content;
+        }
+
+        a {
+            color: #c02c38;
+            text-decoration: none
+        }
+
+        a:hover,
+        a:focus {
+            color: #821e26;
+            text-decoration: underline
+        }
+
+        a:focus {
+            outline: thin dotted;
+            outline: 5px auto -webkit-focus-ring-color;
+            outline-offset: -2px
         }
 
         /* Responsive columns */
@@ -191,22 +206,20 @@
     style="background-image: url(../img/apollo08_earthrise.jpg); background-size: cover; background-attachment: fixed;">
     <div id=navbar>
         <div class="nav_img"><a href="http://bscharan.com"><img id="navbar_logo" src="../img/Logo.png"></img></a></div>
-        <div class="nav_item item_last card"><a class="navbar_link" href="http://bscharan.com">Home</a></div>
+        <div class="nav_item item_last"><a class="navbar_link" href="http://bscharan.com">Home</a></div>
         <!-- <div class="nav_item card"><a class="navbar_link" href="./contactme.html">Contact</a></div> -->
         <!-- <div class="nav_item card"><a class="navbar_link" href="./resume.html">Resume</a></div> -->
-        <div class="nav_item card"><a class="navbar_link" href="./projects.html">Works</a></div>
-        <div class="nav_item card"><a class="navbar_link" href="./about.html">About Me</a></div>
-        <div class="nav_item card"><a class="navbar_link" href="./blog.html" style="color:darkturquoise ;">My Space</a>
-        </div>
-
-
+        <!-- <div class="nav_item"><a class="navbar_link" href="./projects.html">Works</a></div> -->
+        <!-- <div class="nav_item"><a class="navbar_link" href="./about.html">About Me</a></div> -->
+        <div class="nav_item"><a class="navbar_link" href="./blog.html" style="color:darkturquoise ;">My Space</a></div>
     </div>
+
 
     <div>
         <h3>Hi Welcome to my Digital Space. It is my Collection of Internet Things that i found interesting. happy
             Exploring</h3>
     </div>
-
+ 
 
     <div class="Quotes">
 

@@ -2,31 +2,7 @@ body {
     overflow-x: hidden;
 }
 
-/* width */
-
-::-webkit-scrollbar {
-    width: 10px;
-}
-
-/* Track */
-
-/* ::-webkit-scrollbar-track {
-    background: #f1f1f1;
-} */
-
-/* Handle */
-
-::-webkit-scrollbar-thumb {
-    background: #888;
-}
-
-/* Handle on hover */
-
-::-webkit-scrollbar-thumb:hover {
-    background: #555;
-}
-
-h1 {
+/* h1 {
     font-size: 2vw;
 }
 
@@ -48,7 +24,7 @@ h5 {
 
 h6 {
     font-size: 1vw;
-}
+} */
 
 /* p {
     font-size: 1vw;
@@ -58,11 +34,10 @@ a {
 }
 
 #navbar {
-
     padding-top: 1vh;
     height: 8vh;
-    overflow: auto;
-    background-color: beige;
+    overflow: hidden;
+    background-color:#000000;
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
@@ -87,10 +62,12 @@ a {
 .nav_item {
     float: right;
     padding: 2vw;
+    padding-bottom: 1vw;
 }
 
 .item_last {
     margin-right: 2vw;
+    padding-bottom: 1vw;
 }
 
 
