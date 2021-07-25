@@ -57,6 +57,7 @@ a {
 
 .nav_img {
     float: left;
+    max-width: 45%;
 }
 
 .nav_item {
