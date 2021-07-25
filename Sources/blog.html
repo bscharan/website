@@ -43,18 +43,11 @@
 
         .container {
             direction: rtl;
-            width: 96vw;
-            height: 75vh;
-            margin: 2vw;
+            /* width: 96vw;
+            height: 75vh; */
+            margin: 5%;
             padding-top: 1vh;
-            overflow: auto;
-        }
-
-        .left_align {
-            direction: ltr;
-            max-width: 90vw;
-            overflow-x: hidden;
-            overflow-y: scroll;
+            overflow: hidden;
         }
 
         .container:hover {
@@ -62,24 +55,24 @@
         }
 
         q {
-            font-size: 3vw;
+            /* font-size: 3vw; */
             color: #FFF;
             font-family: 'IM Fell DW Pica', serif;
         }
 
         p {
-            font-size: 2vw;
+            /* font-size: 2vw; */
             color: #FFF;
             font-family: 'IM Fell DW Pica', serif;
         }
 
-        
+
         .quote {
             padding: 5vh;
             margin-left: auto;
             margin-right: auto;
             text-align: center;
-            background-color: beige;
+            background-color: transparent;
             overflow: auto;
         }
 
@@ -87,10 +80,10 @@
             padding: 2vw;
             margin-left: auto;
             margin-right: auto;
-            
+
         }
 
-        .Quotes .card{
+        .Quotes .card {
             height: 10vh;
             padding-top: 1vh;
             margin-bottom: 1vh;
@@ -104,8 +97,9 @@
             color: darkturquoise;
         }
 
+
         .quote_author {
-            color: #000;
+            color: #FFF;
             float: right;
         }
 
@@ -115,7 +109,67 @@
             margin: 0;
         }
 
-    
+        .left_align {
+            float: left;
+            /* padding:3vw; */
+            padding-left: 3vw;
+            /* margin: inherit; */
+        }
+
+        .left_align {
+            direction: ltr;
+            max-width: 100%;
+            max-height: 35%;
+            overflow-x: hidden;
+            /* padding-right: 100px;  */
+            overflow-y: scroll;
+        }
+
+        /* Hide scrollbar for Chrome, Safari and Opera */
+        .left_align::-webkit-scrollbar {
+            display: none;
+        }
+
+        /* Hide scrollbar for IE, Edge and Firefox */
+        .left_align {
+            -ms-overflow-style: none;
+            /* IE and Edge */
+            scrollbar-width: none;
+            /* Firefox */
+        }
+
+        .right_align {
+            float: right;
+            padding-top: 3vw;
+            padding-bottom: 1vw;
+            /* padding: 3vw; */
+            /* margin: inherit; */
+        }
+
+        /* Float four columns side by side */
+        .column {
+            float: left;
+            width: 32%;
+            max-height: 33%;
+            /* padding: 0 0.3%; */
+        }
+
+        .column:hover {
+            max-height: fit-content;
+        }
+
+        /* Responsive columns */
+        @media screen and (max-width: 800px) {
+            .column {
+                width: 100%;
+                display: block;
+                margin-bottom: 20px;
+            }
+
+            .column .container {
+                padding-left: 10%;
+            }
+        }
     </style>
     <script>
         var j = 0;
@@ -133,7 +187,8 @@
     </script>
 </head>
 
-<body style="background-image: url(../img/apollo08_earthrise.jpg); background-size: cover; background-attachment: fixed;">
+<body
+    style="background-image: url(../img/apollo08_earthrise.jpg); background-size: cover; background-attachment: fixed;">
     <div id=navbar>
         <div class="nav_img"><a href="http://bscharan.com"><img id="navbar_logo" src="../img/Logo.png"></img></a></div>
         <div class="nav_item item_last card"><a class="navbar_link" href="http://bscharan.com">Home</a></div>
@@ -152,7 +207,7 @@
             Exploring</h3>
     </div>
 
-    
+
     <div class="Quotes">
 
         <div class="card quote">
@@ -162,9 +217,9 @@
             </a>
         </div>
 
-        <div class="card quote" >
+        <div class="card quote">
             <q id="c">The present is theirs; the future, for which I really worked, is mine.</q>
-            <p class="quote_author"><br/>-Nikola Tesla</p>
+            <p class="quote_author"><br />-Nikola Tesla</p>
         </div>
 
         <div class="card quote">
@@ -181,7 +236,8 @@
 
         <div class="card quote">
             <a href="https://www.youtube.com/watch?v=BxV14h0kFs0s">
-                <q id="d">Just because something is going to break in the end, doesn't mean that it can't have a lasting effect on future</q>
+                <q id="d">Just because something is going to break in the end, doesn't mean that it can't have a lasting
+                    effect on future</q>
                 <p class="quote_author"><br />-Tom Scott.</p>
             </a>
         </div>
@@ -192,49 +248,52 @@
         </div> -->
         <script>myfun()</script>
     </div>
-
-    <div class="container" style="background-image: url(../img/Tyger.jpg); background-size: cover;">
-        <div >
-            <div class="left_align">
-                <q>Tyger Tyger, burning bright,
-                    <br />In the forests of the night;
-                    <br />What immortal hand or eye,
-                    <br /> Could frame thy fearful symmetry?
+    <div class="row">
+        <div class="column">
+            <div class="container" style="background-image: url(../img/Tyger.jpg); background-size: cover;">
+                <div class="left_align">
+                    <q>Tyger Tyger, burning bright,
+                        <br />In the forests of the night;
+                        <br />What immortal hand or eye,
+                        <br /> Could frame thy fearful symmetry?
+                        <br />
+                        <br />In what distant deeps or skies.
+                        <br />Burnt the fire of thine eyes?
+                        <br />On what wings dare he aspire?
+                        <br />What the hand, dare seize the fire?
+                        <br />
+                        <div class=hidden>
+                            <br />And what shoulder, & what art,
+                            <br />Could twist the sinews of thy heart?
+                            <br />And when thy heart began to beat,
+                            <br />What dread hand? & what dread feet?
+                            <br />
+                            <br />What the hammer? what the chain,
+                            <br />In what furnace was thy brain?
+                            <br />What the anvil? what dread grasp,
+                            <br />Dare its deadly terrors clasp!
+                            <br />
+                            <br />When the stars threw down their spears
+                            <br />And water'd heaven with their tears:
+                            <br />Did he smile his work to see?
+                            <br />Did he who made the Lamb make thee?
+                            <br />
+                            <br />Tyger Tyger burning bright,
+                            <br />In the forests of the night:
+                            <br />What immortal hand or eye,
+                            <br />Dare frame thy fearful symmetry
+                        </div>
+                    </q>
                     <br />
-                    <br />In what distant deeps or skies.
-                    <br />Burnt the fire of thine eyes?
-                    <br />On what wings dare he aspire?
-                    <br />What the hand, dare seize the fire?
+                    <p class="right_align">-William Blake</p>
                     <br />
-                    <br />And what shoulder, & what art,
-                    <br />Could twist the sinews of thy heart?
-                    <br />And when thy heart began to beat,
-                    <br />What dread hand? & what dread feet?
-                    <br />
-                    <br />What the hammer? what the chain,
-                    <br />In what furnace was thy brain?
-                    <br />What the anvil? what dread grasp,
-                    <br />Dare its deadly terrors clasp!
-                    <br />
-                    <br />When the stars threw down their spears
-                    <br />And water'd heaven with their tears:
-                    <br />Did he smile his work to see?
-                    <br />Did he who made the Lamb make thee?
-                    <br />
-                    <br />Tyger Tyger burning bright,
-                    <br />In the forests of the night:
-                    <br />What immortal hand or eye,
-                    <br />Dare frame thy fearful symmetry
-                </q>
-                <br />
-                <p class="right_align">-William Blake</p>
-                <br />
+                </div>
             </div>
         </div>
     </div>
 
     <div>
-        
+
     </div>
 </body>
 

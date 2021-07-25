@@ -35,7 +35,7 @@ h2 {
 }
 
 h3 {
-    font-size: 1.25vw;
+    font-size: 1vw;
 }
 
 h4 {
@@ -50,21 +50,11 @@ h6 {
     font-size: 1vw;
 }
 
-p {
+/* p {
     font-size: 1vw;
-}
-
+}  */
 a {
-    font-size: 2vw;
-}
-
-a:link, a:visited, a:active {
-    text-decoration: none;
-    color: #000;
-}
-
-a:hover {
-    color: darkturquoise;
+    text-decoration: none
 }
 
 #navbar {
@@ -103,17 +93,7 @@ a:hover {
     margin-right: 2vw;
 }
 
-.left_align {
-    float: left;
-    padding: 3vw;
-    margin: inherit;
-}
 
-.right_align {
-    float: right;
-    padding: 3vw;
-    margin: inherit;
-}
 
 .card {
     box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2);

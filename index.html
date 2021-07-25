@@ -18,6 +18,12 @@
     <link href="https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica:ital@1&display=swap" rel="stylesheet">
     <!-- font-family: 'IM Fell DW Pica', serif; -->
 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,300&display=swap" rel="stylesheet">
+    <!-- font-family: 'Merriweather', serif; -->
+
+
     <!--<base href="http://bscharan.com" target="_blank"/>-->
     <style>
         body {
@@ -27,7 +33,7 @@
         }
 
         #page_body {
-            background-color: #EFF;
+            /* background-color: #EFF; */
             width: 70vw;
             height: auto;
             margin-left: auto;
@@ -53,15 +59,35 @@
             color: #999999;
         }
 
+        a {
+            color: #c02c38;
+            text-decoration: none
+        }
+
+        a:hover,
+        a:focus {
+            color: #821e26;
+            text-decoration: underline
+        }
+
+        a:focus {
+            outline: thin dotted;
+            outline: 5px auto -webkit-focus-ring-color;
+            outline-offset: -2px
+        }
+
+
 
 
         #h1wt {
-            font-family: 'Acme', sans-serif;
+            /* font-family: 'Acme', sans-serif; */
+            font-family: 'Merriweather', serif;
             color: #999999;
         }
 
         #h3wt {
-            font-family: 'Caveat', cursive;
+            /* font-family: 'Caveat', cursive; */
+            font-family: 'Merriweather', serif;
         }
 
         img {
@@ -69,6 +95,13 @@
             max-height: 100%;
             display: block;
             /* remove extra space below image */
+        }
+
+        .hline {
+            border-bottom: 5px dotted #c02c38;
+            text-align: center;
+            padding: 2em 0;
+            margin-bottom: 1em;
         }
 
         .quote {
@@ -123,39 +156,44 @@
         }
     </style>
     <script>
-        var j = 0;
-        function myfun() {
-            var myquotes = document.getElementsByClassName("quote");
-            var i;
-            for (i = 0; i < myquotes.length; i++) {
-                myquotes[i].style.display = "none";
-            }
-            if (j >= myquotes.length) { j = 0; }
-            myquotes[j].style.display = "block"
-            j++;
-            setTimeout(myfun, 10000);
-        }
+        // var j = 0;
+        // function myfun() {
+        //     var myquotes = document.getElementsByClassName("quote");
+        //     var i;
+        //     for (i = 0; i < myquotes.length; i++) {
+        //         myquotes[i].style.display = "none";
+        //     }
+        //     if (j >= myquotes.length) { j = 0; }
+        //     myquotes[j].style.display = "block"
+        //     j++;
+        //     setTimeout(myfun, 10000);
+        // }
     </script>
 </head>
 
-<body id="body" style="background-image: url(./img/apollo08_earthrise.jpg); background-size: cover;">
-    <div id="page_body" style ="opacity: 0.9;">
+<!-- <body id="body" style="background-image: url(./img/apollo08_earthrise.jpg); background-size: cover;"> -->
+
+<body id="body">
+    <div id="page_body" style="opacity: 0.9;">
+
         <div class="" id="welcome">
-            <a href="http://bscharan.com"> <img id="logo" src="./img/Logo.png"></img></a>
-            <h1 id="h1wt" class="welcome_text">Hey Hi, I am Charan ,and this is my digital space.</h1>
-            <h2 id="h2wt" class="welcome_text"></h2>
-            <h3 id="h3wt" class="welcome_text">
-                Note: this digital space is under construction. if you have stumbled accidently.please fell free to hover around.
-                </br>you can report issues at bscharan1729@gmail.com.
-                </br>happy Exploring! :)
-            </h3>
-            <!-- <h3 id="h3wt" class="welcome_text">Note:If you are here to professionally help me with my career move to
+            <div class="hline"></div>
+            <div class="hline">
+                <a href="http://bscharan.com"> <img id="logo" src="./img/Logo.png" style="max-width: 40%;"></img></a>
+                <h1 id="h1wt" class="welcome_text">Hey Hi, I am Sai Charan , Welcome' to my digital space.</h1>
+                <h2 id="h2wt" class="welcome_text"></h2>
+                <h3 id="h3wt" class="welcome_text">
+                    Well, There are lots of easter eggs hidden in this site for you to find.
+                    </br>happy Exploring! :)
+                </h3>
+                <!-- <h3 id="h3wt" class="welcome_text">Note:If you are here to professionally help me with my career move to
                 Resume/about Sections
                 <br />If You here for Fun, There are lot of easter eggs hidden
                 <br /> happy Exploring !
                 <br /> <b>Example:</b>one of the Quote is an active link,
             </h3> -->
-            <div id="welcome_links" >
+            </div>
+            <div id="welcome_links">
                 <table>
                     <tbody>
                         <td class="td_ele"><a href="./Sources/blog.html">My Space</a></td>
@@ -172,8 +210,11 @@
                     </tbody>
                 </table>
             </div>
+            <h3 id="h3wt" class="welcome_text">
+                you can report issues if you find any at  <a href="" > bscharan1729@gmail.com</a>
+                </br>
+            </h3>
         </div>
-
     </div>
 </body>
 
