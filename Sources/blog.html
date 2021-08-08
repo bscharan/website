@@ -45,9 +45,6 @@
         }
 
         .container {
-            direction: rtl;
-            /* width: 96vw;
-            height: 75vh; */
             margin: 5%;
             overflow: hidden;
         }
@@ -129,10 +126,6 @@
         }
         .left_align {
             direction: ltr;
-            /* max-width: 100%; */
-            
-            /* padding-right: 100px;  */
-            
         }
 
         /* Hide scrollbar for Chrome, Safari and Opera */
@@ -150,8 +143,6 @@
             float: right;
             padding-top: 3vw;
             padding-bottom: 1vw;
-            /* padding: 3vw; */
-            /* margin: inherit; */
         }
 
         /* Float four columns side by side */
@@ -183,18 +174,7 @@
             outline-offset: -2px
         }
 
-        /* Responsive columns */
-        @media screen and (max-width: 800px) {
-            .column {
-                width: 100%;
-                display: block;
-                margin-bottom: 20px;
-            }
-
-            .column .container {
-                padding-left: 10%;
-            }
-        }
+        
 
         .hline {
             border-bottom: 5px dotted #c02c38;
@@ -215,11 +195,35 @@
                 margin-bottom: 20px;
             }
 
-            .column .container {
+            .column .container .left_align{
                 padding-left: 10%;
             }
 
+            
+            .container_inside img{
+                width: 100%;
+            }
+
             /* Regular CSS rules for mobile devices here*/
+
+        }
+
+        /* Responsive columns */
+        @media screen and (max-width: 800px) {
+            .column {
+                width: 100%;
+                display: block;
+                margin-bottom: 20px;
+            }
+
+            .column .container .left_align{
+                padding-left: 10%;
+            }
+
+            
+            .container_inside img{
+                width: 100%;
+            }
 
         }
     </style>
