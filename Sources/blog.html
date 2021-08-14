@@ -110,23 +110,26 @@
             padding: 0;
             margin: 0;
         }
+        .center{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        }
 
         .left_align {
+            direction: ltr;
             float: left;
-            /* padding:3vw; */
             padding-left: 3vw;
-            /* margin: inherit; */
         }
 
         .container_inside {
-            max-height: 35%;
+            max-height: 30vw;
             overflow-x: hidden;
-            overflow-y: scroll;
-        }
-        .left_align {
-            direction: ltr;
         }
 
+        .text_overflow_y{
+            overflow-y: scroll;
+        }
         /* Hide scrollbar for Chrome, Safari and Opera */
         .container_inside::-webkit-scrollbar {
             display: none;
@@ -148,12 +151,8 @@
         .column {
             float: left;
             width: 32%;
-            max-height: 33%;
+            /* max-height: 33%; */
             /* padding: 0 0.3%; */
-        }
-
-        .column:hover {
-            max-height: fit-content;
         }
 
         a {
@@ -185,6 +184,11 @@
             color: #FFF;
             font-family: 'Merriweather', serif;
             text-align: center;
+        }
+
+        .img{
+            max-width:100%;
+            max-height:100%
         }
 
         @media only screen and (hover: none) and (pointer: coarse) {
@@ -346,7 +350,7 @@
         </div>
 
         <div class="column">
-            <div class="container container_inside">
+            <div class="container container_inside center">
                 <img class="image_mod" src="../img/CHQuote.png" style="max-width:100%;"></img>
             </div>
         </div>
@@ -354,12 +358,14 @@
         <div class="column">
             <div class="container container_inside " style=" background-color: rgb(300, 300, 300);">
                 <a href="https://play.google.com/store/apps/details?id=com.bscharan.myideajournal" target="_blank">
-                    <img class="image_mod" src="../img/journal_icon.png" style="max-width: 100%;"></img>
+                    <img class="image_mod" src="../img/journal_icon.png" style="max-width:100%;"></img>
                 </a>
                 </div>
-            <div  style="margin-left: auto; margin-right: auto;"> <p>An App I Made</p></div>
+            <div class="center"> <a href="https://play.google.com/store/apps/details?id=com.bscharan.myideajournal" target="_blank">
+                <p>An App I Made : MyIdeaJournal</p></a></div>
         </div>
     </div>
+
 
     <div>
 
