@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!--TODO :  <!DOCTYPE html> causing issue with CSS -->
 <html>
 <head>
     <title>My Space.</title>
@@ -344,10 +344,20 @@
                 </div>
             </div>
         </div>
+
         <div class="column">
             <div class="container container_inside">
-                <img class="image_mod" src="../img/CHQuote.png"></img>
+                <img class="image_mod" src="../img/CHQuote.png" style="max-width:100%;"></img>
             </div>
+        </div>
+        <!-- --TODO : make image fit container both height and width -->
+        <div class="column">
+            <div class="container container_inside " style=" background-color: rgb(300, 300, 300);">
+                <a href="https://play.google.com/store/apps/details?id=com.bscharan.myideajournal" target="_blank">
+                    <img class="image_mod" src="../img/journal_icon.png" style="max-width: 100%;"></img>
+                </a>
+                </div>
+            <div  style="margin-left: auto; margin-right: auto;"> <p>An App I Made</p></div>
         </div>
     </div>
 
